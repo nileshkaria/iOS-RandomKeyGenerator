@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B50334E7172CA24A00D53A28 /* NPKeyGenerationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B50334E6172CA24A00D53A28 /* NPKeyGenerationViewController.mm */; };
+		B50334EA172CA94400D53A28 /* libcryptopp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B50334E9172CA94400D53A28 /* libcryptopp.a */; };
+		B5381490172C810500303F11 /* NPKeyGenerationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53A5E9C172C7DD30063D01D /* NPKeyGenerationDetailViewController.m */; };
 		B53A5E73172C7CC60063D01D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53A5E72172C7CC60063D01D /* UIKit.framework */; };
 		B53A5E75172C7CC60063D01D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53A5E74172C7CC60063D01D /* Foundation.framework */; };
 		B53A5E77172C7CC60063D01D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53A5E76172C7CC60063D01D /* CoreGraphics.framework */; };
@@ -18,10 +21,11 @@
 		B53A5E89172C7CC60063D01D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B53A5E88172C7CC60063D01D /* Default-568h@2x.png */; };
 		B53A5E8C172C7CC60063D01D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A5E8A172C7CC60063D01D /* MainStoryboard_iPhone.storyboard */; };
 		B53A5E8F172C7CC60063D01D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53A5E8D172C7CC60063D01D /* MainStoryboard_iPad.storyboard */; };
-		B53A5E92172C7CC60063D01D /* NPKeyGenerationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53A5E91172C7CC60063D01D /* NPKeyGenerationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B50334E6172CA24A00D53A28 /* NPKeyGenerationViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NPKeyGenerationViewController.mm; sourceTree = "<group>"; };
+		B50334E9172CA94400D53A28 /* libcryptopp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcryptopp.a; path = ../cryptopp/cryptopp562/libcryptopp.a; sourceTree = "<group>"; };
 		B53A5E6F172C7CC60063D01D /* NilPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NilPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53A5E72172C7CC60063D01D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B53A5E74172C7CC60063D01D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,7 +42,146 @@
 		B53A5E8B172C7CC60063D01D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B53A5E8E172C7CC60063D01D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		B53A5E90172C7CC60063D01D /* NPKeyGenerationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPKeyGenerationViewController.h; sourceTree = "<group>"; };
-		B53A5E91172C7CC60063D01D /* NPKeyGenerationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPKeyGenerationViewController.m; sourceTree = "<group>"; };
+		B53A5E9B172C7DD30063D01D /* NPKeyGenerationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPKeyGenerationDetailViewController.h; sourceTree = "<group>"; };
+		B53A5E9C172C7DD30063D01D /* NPKeyGenerationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPKeyGenerationDetailViewController.m; sourceTree = "<group>"; };
+		B5EC4F01172C9960005382AE /* 3way.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = 3way.h; path = ../cryptopp/cryptopp562/3way.h; sourceTree = "<group>"; };
+		B5EC4F02172C9960005382AE /* adler32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = adler32.h; path = ../cryptopp/cryptopp562/adler32.h; sourceTree = "<group>"; };
+		B5EC4F03172C9960005382AE /* aes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = aes.h; path = ../cryptopp/cryptopp562/aes.h; sourceTree = "<group>"; };
+		B5EC4F04172C9960005382AE /* algebra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = algebra.h; path = ../cryptopp/cryptopp562/algebra.h; sourceTree = "<group>"; };
+		B5EC4F05172C9960005382AE /* algparam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = algparam.h; path = ../cryptopp/cryptopp562/algparam.h; sourceTree = "<group>"; };
+		B5EC4F06172C9960005382AE /* arc4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = arc4.h; path = ../cryptopp/cryptopp562/arc4.h; sourceTree = "<group>"; };
+		B5EC4F07172C9960005382AE /* argnames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = argnames.h; path = ../cryptopp/cryptopp562/argnames.h; sourceTree = "<group>"; };
+		B5EC4F08172C9960005382AE /* asn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = asn.h; path = ../cryptopp/cryptopp562/asn.h; sourceTree = "<group>"; };
+		B5EC4F09172C9960005382AE /* authenc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = authenc.h; path = ../cryptopp/cryptopp562/authenc.h; sourceTree = "<group>"; };
+		B5EC4F0A172C9960005382AE /* base32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = base32.h; path = ../cryptopp/cryptopp562/base32.h; sourceTree = "<group>"; };
+		B5EC4F0B172C9960005382AE /* base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = base64.h; path = ../cryptopp/cryptopp562/base64.h; sourceTree = "<group>"; };
+		B5EC4F0C172C9960005382AE /* basecode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = basecode.h; path = ../cryptopp/cryptopp562/basecode.h; sourceTree = "<group>"; };
+		B5EC4F0D172C9960005382AE /* bench.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = bench.h; path = ../cryptopp/cryptopp562/bench.h; sourceTree = "<group>"; };
+		B5EC4F0E172C9960005382AE /* blowfish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = ../cryptopp/cryptopp562/blowfish.h; sourceTree = "<group>"; };
+		B5EC4F0F172C9960005382AE /* blumshub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = blumshub.h; path = ../cryptopp/cryptopp562/blumshub.h; sourceTree = "<group>"; };
+		B5EC4F10172C9960005382AE /* camellia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = ../cryptopp/cryptopp562/camellia.h; sourceTree = "<group>"; };
+		B5EC4F11172C9960005382AE /* cast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cast.h; path = ../cryptopp/cryptopp562/cast.h; sourceTree = "<group>"; };
+		B5EC4F12172C9960005382AE /* cbcmac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cbcmac.h; path = ../cryptopp/cryptopp562/cbcmac.h; sourceTree = "<group>"; };
+		B5EC4F13172C9960005382AE /* ccm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ccm.h; path = ../cryptopp/cryptopp562/ccm.h; sourceTree = "<group>"; };
+		B5EC4F14172C9960005382AE /* channels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = channels.h; path = ../cryptopp/cryptopp562/channels.h; sourceTree = "<group>"; };
+		B5EC4F15172C9960005382AE /* cmac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = ../cryptopp/cryptopp562/cmac.h; sourceTree = "<group>"; };
+		B5EC4F16172C9960005382AE /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../cryptopp/cryptopp562/config.h; sourceTree = "<group>"; };
+		B5EC4F17172C9960005382AE /* cpu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cpu.h; path = ../cryptopp/cryptopp562/cpu.h; sourceTree = "<group>"; };
+		B5EC4F18172C9960005382AE /* crc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = crc.h; path = ../cryptopp/cryptopp562/crc.h; sourceTree = "<group>"; };
+		B5EC4F19172C9960005382AE /* cryptlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cryptlib.h; path = ../cryptopp/cryptopp562/cryptlib.h; sourceTree = "<group>"; };
+		B5EC4F1A172C9960005382AE /* default.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = default.h; path = ../cryptopp/cryptopp562/default.h; sourceTree = "<group>"; };
+		B5EC4F1B172C9960005382AE /* des.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = des.h; path = ../cryptopp/cryptopp562/des.h; sourceTree = "<group>"; };
+		B5EC4F1C172C9960005382AE /* dh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dh.h; path = ../cryptopp/cryptopp562/dh.h; sourceTree = "<group>"; };
+		B5EC4F1D172C9960005382AE /* dh2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dh2.h; path = ../cryptopp/cryptopp562/dh2.h; sourceTree = "<group>"; };
+		B5EC4F1E172C9960005382AE /* dll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dll.h; path = ../cryptopp/cryptopp562/dll.h; sourceTree = "<group>"; };
+		B5EC4F1F172C9960005382AE /* dmac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dmac.h; path = ../cryptopp/cryptopp562/dmac.h; sourceTree = "<group>"; };
+		B5EC4F20172C9960005382AE /* dsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = ../cryptopp/cryptopp562/dsa.h; sourceTree = "<group>"; };
+		B5EC4F21172C9960005382AE /* eax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = eax.h; path = ../cryptopp/cryptopp562/eax.h; sourceTree = "<group>"; };
+		B5EC4F22172C9960005382AE /* ec2n.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ec2n.h; path = ../cryptopp/cryptopp562/ec2n.h; sourceTree = "<group>"; };
+		B5EC4F23172C9960005382AE /* eccrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = eccrypto.h; path = ../cryptopp/cryptopp562/eccrypto.h; sourceTree = "<group>"; };
+		B5EC4F24172C9960005382AE /* ecp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ecp.h; path = ../cryptopp/cryptopp562/ecp.h; sourceTree = "<group>"; };
+		B5EC4F25172C9960005382AE /* elgamal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = elgamal.h; path = ../cryptopp/cryptopp562/elgamal.h; sourceTree = "<group>"; };
+		B5EC4F26172C9960005382AE /* emsa2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = emsa2.h; path = ../cryptopp/cryptopp562/emsa2.h; sourceTree = "<group>"; };
+		B5EC4F27172C9960005382AE /* eprecomp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = eprecomp.h; path = ../cryptopp/cryptopp562/eprecomp.h; sourceTree = "<group>"; };
+		B5EC4F28172C9960005382AE /* esign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = esign.h; path = ../cryptopp/cryptopp562/esign.h; sourceTree = "<group>"; };
+		B5EC4F29172C9960005382AE /* factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = factory.h; path = ../cryptopp/cryptopp562/factory.h; sourceTree = "<group>"; };
+		B5EC4F2A172C9960005382AE /* files.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = files.h; path = ../cryptopp/cryptopp562/files.h; sourceTree = "<group>"; };
+		B5EC4F2B172C9960005382AE /* filters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = filters.h; path = ../cryptopp/cryptopp562/filters.h; sourceTree = "<group>"; };
+		B5EC4F2C172C9960005382AE /* fips140.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fips140.h; path = ../cryptopp/cryptopp562/fips140.h; sourceTree = "<group>"; };
+		B5EC4F2D172C9960005382AE /* fltrimpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fltrimpl.h; path = ../cryptopp/cryptopp562/fltrimpl.h; sourceTree = "<group>"; };
+		B5EC4F2E172C9960005382AE /* gcm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gcm.h; path = ../cryptopp/cryptopp562/gcm.h; sourceTree = "<group>"; };
+		B5EC4F2F172C9960005382AE /* gf2_32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gf2_32.h; path = ../cryptopp/cryptopp562/gf2_32.h; sourceTree = "<group>"; };
+		B5EC4F30172C9960005382AE /* gf2n.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gf2n.h; path = ../cryptopp/cryptopp562/gf2n.h; sourceTree = "<group>"; };
+		B5EC4F31172C9960005382AE /* gf256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gf256.h; path = ../cryptopp/cryptopp562/gf256.h; sourceTree = "<group>"; };
+		B5EC4F32172C9960005382AE /* gfpcrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gfpcrypt.h; path = ../cryptopp/cryptopp562/gfpcrypt.h; sourceTree = "<group>"; };
+		B5EC4F33172C9960005382AE /* gost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gost.h; path = ../cryptopp/cryptopp562/gost.h; sourceTree = "<group>"; };
+		B5EC4F34172C9960005382AE /* gzip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gzip.h; path = ../cryptopp/cryptopp562/gzip.h; sourceTree = "<group>"; };
+		B5EC4F35172C9960005382AE /* hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hex.h; path = ../cryptopp/cryptopp562/hex.h; sourceTree = "<group>"; };
+		B5EC4F36172C9960005382AE /* hmac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = ../cryptopp/cryptopp562/hmac.h; sourceTree = "<group>"; };
+		B5EC4F37172C9960005382AE /* hrtimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hrtimer.h; path = ../cryptopp/cryptopp562/hrtimer.h; sourceTree = "<group>"; };
+		B5EC4F38172C9960005382AE /* ida.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ida.h; path = ../cryptopp/cryptopp562/ida.h; sourceTree = "<group>"; };
+		B5EC4F39172C9960005382AE /* idea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = idea.h; path = ../cryptopp/cryptopp562/idea.h; sourceTree = "<group>"; };
+		B5EC4F3A172C9960005382AE /* integer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = integer.h; path = ../cryptopp/cryptopp562/integer.h; sourceTree = "<group>"; };
+		B5EC4F3B172C9960005382AE /* iterhash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = iterhash.h; path = ../cryptopp/cryptopp562/iterhash.h; sourceTree = "<group>"; };
+		B5EC4F3C172C9960005382AE /* lubyrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lubyrack.h; path = ../cryptopp/cryptopp562/lubyrack.h; sourceTree = "<group>"; };
+		B5EC4F3D172C9960005382AE /* luc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = luc.h; path = ../cryptopp/cryptopp562/luc.h; sourceTree = "<group>"; };
+		B5EC4F3E172C9960005382AE /* mars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mars.h; path = ../cryptopp/cryptopp562/mars.h; sourceTree = "<group>"; };
+		B5EC4F3F172C9960005382AE /* md2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = md2.h; path = ../cryptopp/cryptopp562/md2.h; sourceTree = "<group>"; };
+		B5EC4F40172C9960005382AE /* md4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = md4.h; path = ../cryptopp/cryptopp562/md4.h; sourceTree = "<group>"; };
+		B5EC4F41172C9960005382AE /* md5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = md5.h; path = ../cryptopp/cryptopp562/md5.h; sourceTree = "<group>"; };
+		B5EC4F42172C9960005382AE /* mdc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mdc.h; path = ../cryptopp/cryptopp562/mdc.h; sourceTree = "<group>"; };
+		B5EC4F43172C9960005382AE /* misc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = misc.h; path = ../cryptopp/cryptopp562/misc.h; sourceTree = "<group>"; };
+		B5EC4F44172C9960005382AE /* modarith.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = modarith.h; path = ../cryptopp/cryptopp562/modarith.h; sourceTree = "<group>"; };
+		B5EC4F45172C9960005382AE /* modes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = modes.h; path = ../cryptopp/cryptopp562/modes.h; sourceTree = "<group>"; };
+		B5EC4F46172C9960005382AE /* modexppc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = modexppc.h; path = ../cryptopp/cryptopp562/modexppc.h; sourceTree = "<group>"; };
+		B5EC4F47172C9960005382AE /* mqueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mqueue.h; path = ../cryptopp/cryptopp562/mqueue.h; sourceTree = "<group>"; };
+		B5EC4F48172C9960005382AE /* mqv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mqv.h; path = ../cryptopp/cryptopp562/mqv.h; sourceTree = "<group>"; };
+		B5EC4F49172C9960005382AE /* nbtheory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = nbtheory.h; path = ../cryptopp/cryptopp562/nbtheory.h; sourceTree = "<group>"; };
+		B5EC4F4A172C9960005382AE /* network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = network.h; path = ../cryptopp/cryptopp562/network.h; sourceTree = "<group>"; };
+		B5EC4F4B172C9960005382AE /* nr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = nr.h; path = ../cryptopp/cryptopp562/nr.h; sourceTree = "<group>"; };
+		B5EC4F4C172C9960005382AE /* oaep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = oaep.h; path = ../cryptopp/cryptopp562/oaep.h; sourceTree = "<group>"; };
+		B5EC4F4D172C9960005382AE /* oids.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = oids.h; path = ../cryptopp/cryptopp562/oids.h; sourceTree = "<group>"; };
+		B5EC4F4E172C9960005382AE /* osrng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = osrng.h; path = ../cryptopp/cryptopp562/osrng.h; sourceTree = "<group>"; };
+		B5EC4F4F172C9960005382AE /* panama.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = panama.h; path = ../cryptopp/cryptopp562/panama.h; sourceTree = "<group>"; };
+		B5EC4F50172C9960005382AE /* pch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pch.h; path = ../cryptopp/cryptopp562/pch.h; sourceTree = "<group>"; };
+		B5EC4F51172C9960005382AE /* pkcspad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pkcspad.h; path = ../cryptopp/cryptopp562/pkcspad.h; sourceTree = "<group>"; };
+		B5EC4F52172C9960005382AE /* polynomi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = polynomi.h; path = ../cryptopp/cryptopp562/polynomi.h; sourceTree = "<group>"; };
+		B5EC4F53172C9960005382AE /* pssr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pssr.h; path = ../cryptopp/cryptopp562/pssr.h; sourceTree = "<group>"; };
+		B5EC4F54172C9960005382AE /* pubkey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pubkey.h; path = ../cryptopp/cryptopp562/pubkey.h; sourceTree = "<group>"; };
+		B5EC4F55172C9960005382AE /* pwdbased.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pwdbased.h; path = ../cryptopp/cryptopp562/pwdbased.h; sourceTree = "<group>"; };
+		B5EC4F56172C9960005382AE /* queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = queue.h; path = ../cryptopp/cryptopp562/queue.h; sourceTree = "<group>"; };
+		B5EC4F57172C9960005382AE /* rabin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rabin.h; path = ../cryptopp/cryptopp562/rabin.h; sourceTree = "<group>"; };
+		B5EC4F58172C9960005382AE /* randpool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = randpool.h; path = ../cryptopp/cryptopp562/randpool.h; sourceTree = "<group>"; };
+		B5EC4F59172C9960005382AE /* rc2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = ../cryptopp/cryptopp562/rc2.h; sourceTree = "<group>"; };
+		B5EC4F5A172C9960005382AE /* rc5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rc5.h; path = ../cryptopp/cryptopp562/rc5.h; sourceTree = "<group>"; };
+		B5EC4F5B172C9960005382AE /* rc6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rc6.h; path = ../cryptopp/cryptopp562/rc6.h; sourceTree = "<group>"; };
+		B5EC4F5C172C9960005382AE /* resource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = resource.h; path = ../cryptopp/cryptopp562/resource.h; sourceTree = "<group>"; };
+		B5EC4F5D172C9960005382AE /* rijndael.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rijndael.h; path = ../cryptopp/cryptopp562/rijndael.h; sourceTree = "<group>"; };
+		B5EC4F5E172C9960005382AE /* ripemd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = ../cryptopp/cryptopp562/ripemd.h; sourceTree = "<group>"; };
+		B5EC4F5F172C9960005382AE /* rng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rng.h; path = ../cryptopp/cryptopp562/rng.h; sourceTree = "<group>"; };
+		B5EC4F60172C9960005382AE /* rsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = ../cryptopp/cryptopp562/rsa.h; sourceTree = "<group>"; };
+		B5EC4F61172C9960005382AE /* rw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rw.h; path = ../cryptopp/cryptopp562/rw.h; sourceTree = "<group>"; };
+		B5EC4F62172C9960005382AE /* safer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = safer.h; path = ../cryptopp/cryptopp562/safer.h; sourceTree = "<group>"; };
+		B5EC4F63172C9960005382AE /* salsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = salsa.h; path = ../cryptopp/cryptopp562/salsa.h; sourceTree = "<group>"; };
+		B5EC4F64172C9960005382AE /* seal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = seal.h; path = ../cryptopp/cryptopp562/seal.h; sourceTree = "<group>"; };
+		B5EC4F65172C9960005382AE /* secblock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = secblock.h; path = ../cryptopp/cryptopp562/secblock.h; sourceTree = "<group>"; };
+		B5EC4F66172C9960005382AE /* seckey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = seckey.h; path = ../cryptopp/cryptopp562/seckey.h; sourceTree = "<group>"; };
+		B5EC4F67172C9960005382AE /* seed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = seed.h; path = ../cryptopp/cryptopp562/seed.h; sourceTree = "<group>"; };
+		B5EC4F68172C9960005382AE /* serpent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = serpent.h; path = ../cryptopp/cryptopp562/serpent.h; sourceTree = "<group>"; };
+		B5EC4F69172C9960005382AE /* serpentp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = serpentp.h; path = ../cryptopp/cryptopp562/serpentp.h; sourceTree = "<group>"; };
+		B5EC4F6A172C9960005382AE /* sha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sha.h; path = ../cryptopp/cryptopp562/sha.h; sourceTree = "<group>"; };
+		B5EC4F6B172C9960005382AE /* sha3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sha3.h; path = ../cryptopp/cryptopp562/sha3.h; sourceTree = "<group>"; };
+		B5EC4F6C172C9960005382AE /* shacal2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = shacal2.h; path = ../cryptopp/cryptopp562/shacal2.h; sourceTree = "<group>"; };
+		B5EC4F6D172C9960005382AE /* shark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = shark.h; path = ../cryptopp/cryptopp562/shark.h; sourceTree = "<group>"; };
+		B5EC4F6E172C9960005382AE /* simple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = simple.h; path = ../cryptopp/cryptopp562/simple.h; sourceTree = "<group>"; };
+		B5EC4F6F172C9960005382AE /* skipjack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = skipjack.h; path = ../cryptopp/cryptopp562/skipjack.h; sourceTree = "<group>"; };
+		B5EC4F70172C9960005382AE /* smartptr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = smartptr.h; path = ../cryptopp/cryptopp562/smartptr.h; sourceTree = "<group>"; };
+		B5EC4F71172C9960005382AE /* socketft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = socketft.h; path = ../cryptopp/cryptopp562/socketft.h; sourceTree = "<group>"; };
+		B5EC4F72172C9960005382AE /* sosemanuk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sosemanuk.h; path = ../cryptopp/cryptopp562/sosemanuk.h; sourceTree = "<group>"; };
+		B5EC4F73172C9960005382AE /* square.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = square.h; path = ../cryptopp/cryptopp562/square.h; sourceTree = "<group>"; };
+		B5EC4F74172C9960005382AE /* StdAfx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StdAfx.h; path = ../cryptopp/cryptopp562/StdAfx.h; sourceTree = "<group>"; };
+		B5EC4F75172C9960005382AE /* stdcpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stdcpp.h; path = ../cryptopp/cryptopp562/stdcpp.h; sourceTree = "<group>"; };
+		B5EC4F76172C9960005382AE /* strciphr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = strciphr.h; path = ../cryptopp/cryptopp562/strciphr.h; sourceTree = "<group>"; };
+		B5EC4F77172C9960005382AE /* SymmetricCipher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SymmetricCipher.h; path = ../cryptopp/cryptopp562/SymmetricCipher.h; sourceTree = "<group>"; };
+		B5EC4F78172C9960005382AE /* tea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tea.h; path = ../cryptopp/cryptopp562/tea.h; sourceTree = "<group>"; };
+		B5EC4F79172C9960005382AE /* tiger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tiger.h; path = ../cryptopp/cryptopp562/tiger.h; sourceTree = "<group>"; };
+		B5EC4F7A172C9960005382AE /* trdlocal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = trdlocal.h; path = ../cryptopp/cryptopp562/trdlocal.h; sourceTree = "<group>"; };
+		B5EC4F7B172C9960005382AE /* trunhash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = trunhash.h; path = ../cryptopp/cryptopp562/trunhash.h; sourceTree = "<group>"; };
+		B5EC4F7C172C9960005382AE /* ttmac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ttmac.h; path = ../cryptopp/cryptopp562/ttmac.h; sourceTree = "<group>"; };
+		B5EC4F7D172C9960005382AE /* twofish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = twofish.h; path = ../cryptopp/cryptopp562/twofish.h; sourceTree = "<group>"; };
+		B5EC4F7E172C9960005382AE /* validate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = validate.h; path = ../cryptopp/cryptopp562/validate.h; sourceTree = "<group>"; };
+		B5EC4F7F172C9960005382AE /* vmac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = vmac.h; path = ../cryptopp/cryptopp562/vmac.h; sourceTree = "<group>"; };
+		B5EC4F80172C9960005382AE /* wait.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wait.h; path = ../cryptopp/cryptopp562/wait.h; sourceTree = "<group>"; };
+		B5EC4F81172C9960005382AE /* wake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wake.h; path = ../cryptopp/cryptopp562/wake.h; sourceTree = "<group>"; };
+		B5EC4F82172C9960005382AE /* whrlpool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = ../cryptopp/cryptopp562/whrlpool.h; sourceTree = "<group>"; };
+		B5EC4F83172C9960005382AE /* winpipes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = winpipes.h; path = ../cryptopp/cryptopp562/winpipes.h; sourceTree = "<group>"; };
+		B5EC4F84172C9960005382AE /* words.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = words.h; path = ../cryptopp/cryptopp562/words.h; sourceTree = "<group>"; };
+		B5EC4F85172C9960005382AE /* xtr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xtr.h; path = ../cryptopp/cryptopp562/xtr.h; sourceTree = "<group>"; };
+		B5EC4F86172C9960005382AE /* xtrcrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xtrcrypt.h; path = ../cryptopp/cryptopp562/xtrcrypt.h; sourceTree = "<group>"; };
+		B5EC4F87172C9960005382AE /* zdeflate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = zdeflate.h; path = ../cryptopp/cryptopp562/zdeflate.h; sourceTree = "<group>"; };
+		B5EC4F88172C9960005382AE /* zinflate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = zinflate.h; path = ../cryptopp/cryptopp562/zinflate.h; sourceTree = "<group>"; };
+		B5EC4F89172C9960005382AE /* zlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = zlib.h; path = ../cryptopp/cryptopp562/zlib.h; sourceTree = "<group>"; };
+		B5EC4F8A172C9A28005382AE /* libcryptopp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcryptopp.a; path = ../cryptopp/libcryptopp.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50334EA172CA94400D53A28 /* libcryptopp.a in Frameworks */,
 				B53A5E73172C7CC60063D01D /* UIKit.framework in Frameworks */,
 				B53A5E75172C7CC60063D01D /* Foundation.framework in Frameworks */,
 				B53A5E77172C7CC60063D01D /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +202,9 @@
 		B53A5E66172C7CC60063D01D = {
 			isa = PBXGroup;
 			children = (
+				B50334E9172CA94400D53A28 /* libcryptopp.a */,
+				B5EC4F8A172C9A28005382AE /* libcryptopp.a */,
+				B5EC4F00172C9915005382AE /* Indexing Headers */,
 				B53A5E78172C7CC60063D01D /* NilPass */,
 				B53A5E71172C7CC60063D01D /* Frameworks */,
 				B53A5E70172C7CC60063D01D /* Products */,
@@ -89,8 +236,10 @@
 				B53A5E82172C7CC60063D01D /* NPKeyGenerationAppDelegate.m */,
 				B53A5E8A172C7CC60063D01D /* MainStoryboard_iPhone.storyboard */,
 				B53A5E8D172C7CC60063D01D /* MainStoryboard_iPad.storyboard */,
+				B53A5E9B172C7DD30063D01D /* NPKeyGenerationDetailViewController.h */,
+				B53A5E9C172C7DD30063D01D /* NPKeyGenerationDetailViewController.m */,
 				B53A5E90172C7CC60063D01D /* NPKeyGenerationViewController.h */,
-				B53A5E91172C7CC60063D01D /* NPKeyGenerationViewController.m */,
+				B50334E6172CA24A00D53A28 /* NPKeyGenerationViewController.mm */,
 				B53A5E79172C7CC60063D01D /* Supporting Files */,
 			);
 			path = NilPass;
@@ -108,6 +257,150 @@
 				B53A5E88172C7CC60063D01D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5EC4F00172C9915005382AE /* Indexing Headers */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC4F01172C9960005382AE /* 3way.h */,
+				B5EC4F02172C9960005382AE /* adler32.h */,
+				B5EC4F03172C9960005382AE /* aes.h */,
+				B5EC4F04172C9960005382AE /* algebra.h */,
+				B5EC4F05172C9960005382AE /* algparam.h */,
+				B5EC4F06172C9960005382AE /* arc4.h */,
+				B5EC4F07172C9960005382AE /* argnames.h */,
+				B5EC4F08172C9960005382AE /* asn.h */,
+				B5EC4F09172C9960005382AE /* authenc.h */,
+				B5EC4F0A172C9960005382AE /* base32.h */,
+				B5EC4F0B172C9960005382AE /* base64.h */,
+				B5EC4F0C172C9960005382AE /* basecode.h */,
+				B5EC4F0D172C9960005382AE /* bench.h */,
+				B5EC4F0E172C9960005382AE /* blowfish.h */,
+				B5EC4F0F172C9960005382AE /* blumshub.h */,
+				B5EC4F10172C9960005382AE /* camellia.h */,
+				B5EC4F11172C9960005382AE /* cast.h */,
+				B5EC4F12172C9960005382AE /* cbcmac.h */,
+				B5EC4F13172C9960005382AE /* ccm.h */,
+				B5EC4F14172C9960005382AE /* channels.h */,
+				B5EC4F15172C9960005382AE /* cmac.h */,
+				B5EC4F16172C9960005382AE /* config.h */,
+				B5EC4F17172C9960005382AE /* cpu.h */,
+				B5EC4F18172C9960005382AE /* crc.h */,
+				B5EC4F19172C9960005382AE /* cryptlib.h */,
+				B5EC4F1A172C9960005382AE /* default.h */,
+				B5EC4F1B172C9960005382AE /* des.h */,
+				B5EC4F1C172C9960005382AE /* dh.h */,
+				B5EC4F1D172C9960005382AE /* dh2.h */,
+				B5EC4F1E172C9960005382AE /* dll.h */,
+				B5EC4F1F172C9960005382AE /* dmac.h */,
+				B5EC4F20172C9960005382AE /* dsa.h */,
+				B5EC4F21172C9960005382AE /* eax.h */,
+				B5EC4F22172C9960005382AE /* ec2n.h */,
+				B5EC4F23172C9960005382AE /* eccrypto.h */,
+				B5EC4F24172C9960005382AE /* ecp.h */,
+				B5EC4F25172C9960005382AE /* elgamal.h */,
+				B5EC4F26172C9960005382AE /* emsa2.h */,
+				B5EC4F27172C9960005382AE /* eprecomp.h */,
+				B5EC4F28172C9960005382AE /* esign.h */,
+				B5EC4F29172C9960005382AE /* factory.h */,
+				B5EC4F2A172C9960005382AE /* files.h */,
+				B5EC4F2B172C9960005382AE /* filters.h */,
+				B5EC4F2C172C9960005382AE /* fips140.h */,
+				B5EC4F2D172C9960005382AE /* fltrimpl.h */,
+				B5EC4F2E172C9960005382AE /* gcm.h */,
+				B5EC4F2F172C9960005382AE /* gf2_32.h */,
+				B5EC4F30172C9960005382AE /* gf2n.h */,
+				B5EC4F31172C9960005382AE /* gf256.h */,
+				B5EC4F32172C9960005382AE /* gfpcrypt.h */,
+				B5EC4F33172C9960005382AE /* gost.h */,
+				B5EC4F34172C9960005382AE /* gzip.h */,
+				B5EC4F35172C9960005382AE /* hex.h */,
+				B5EC4F36172C9960005382AE /* hmac.h */,
+				B5EC4F37172C9960005382AE /* hrtimer.h */,
+				B5EC4F38172C9960005382AE /* ida.h */,
+				B5EC4F39172C9960005382AE /* idea.h */,
+				B5EC4F3A172C9960005382AE /* integer.h */,
+				B5EC4F3B172C9960005382AE /* iterhash.h */,
+				B5EC4F3C172C9960005382AE /* lubyrack.h */,
+				B5EC4F3D172C9960005382AE /* luc.h */,
+				B5EC4F3E172C9960005382AE /* mars.h */,
+				B5EC4F3F172C9960005382AE /* md2.h */,
+				B5EC4F40172C9960005382AE /* md4.h */,
+				B5EC4F41172C9960005382AE /* md5.h */,
+				B5EC4F42172C9960005382AE /* mdc.h */,
+				B5EC4F43172C9960005382AE /* misc.h */,
+				B5EC4F44172C9960005382AE /* modarith.h */,
+				B5EC4F45172C9960005382AE /* modes.h */,
+				B5EC4F46172C9960005382AE /* modexppc.h */,
+				B5EC4F47172C9960005382AE /* mqueue.h */,
+				B5EC4F48172C9960005382AE /* mqv.h */,
+				B5EC4F49172C9960005382AE /* nbtheory.h */,
+				B5EC4F4A172C9960005382AE /* network.h */,
+				B5EC4F4B172C9960005382AE /* nr.h */,
+				B5EC4F4C172C9960005382AE /* oaep.h */,
+				B5EC4F4D172C9960005382AE /* oids.h */,
+				B5EC4F4E172C9960005382AE /* osrng.h */,
+				B5EC4F4F172C9960005382AE /* panama.h */,
+				B5EC4F50172C9960005382AE /* pch.h */,
+				B5EC4F51172C9960005382AE /* pkcspad.h */,
+				B5EC4F52172C9960005382AE /* polynomi.h */,
+				B5EC4F53172C9960005382AE /* pssr.h */,
+				B5EC4F54172C9960005382AE /* pubkey.h */,
+				B5EC4F55172C9960005382AE /* pwdbased.h */,
+				B5EC4F56172C9960005382AE /* queue.h */,
+				B5EC4F57172C9960005382AE /* rabin.h */,
+				B5EC4F58172C9960005382AE /* randpool.h */,
+				B5EC4F59172C9960005382AE /* rc2.h */,
+				B5EC4F5A172C9960005382AE /* rc5.h */,
+				B5EC4F5B172C9960005382AE /* rc6.h */,
+				B5EC4F5C172C9960005382AE /* resource.h */,
+				B5EC4F5D172C9960005382AE /* rijndael.h */,
+				B5EC4F5E172C9960005382AE /* ripemd.h */,
+				B5EC4F5F172C9960005382AE /* rng.h */,
+				B5EC4F60172C9960005382AE /* rsa.h */,
+				B5EC4F61172C9960005382AE /* rw.h */,
+				B5EC4F62172C9960005382AE /* safer.h */,
+				B5EC4F63172C9960005382AE /* salsa.h */,
+				B5EC4F64172C9960005382AE /* seal.h */,
+				B5EC4F65172C9960005382AE /* secblock.h */,
+				B5EC4F66172C9960005382AE /* seckey.h */,
+				B5EC4F67172C9960005382AE /* seed.h */,
+				B5EC4F68172C9960005382AE /* serpent.h */,
+				B5EC4F69172C9960005382AE /* serpentp.h */,
+				B5EC4F6A172C9960005382AE /* sha.h */,
+				B5EC4F6B172C9960005382AE /* sha3.h */,
+				B5EC4F6C172C9960005382AE /* shacal2.h */,
+				B5EC4F6D172C9960005382AE /* shark.h */,
+				B5EC4F6E172C9960005382AE /* simple.h */,
+				B5EC4F6F172C9960005382AE /* skipjack.h */,
+				B5EC4F70172C9960005382AE /* smartptr.h */,
+				B5EC4F71172C9960005382AE /* socketft.h */,
+				B5EC4F72172C9960005382AE /* sosemanuk.h */,
+				B5EC4F73172C9960005382AE /* square.h */,
+				B5EC4F74172C9960005382AE /* StdAfx.h */,
+				B5EC4F75172C9960005382AE /* stdcpp.h */,
+				B5EC4F76172C9960005382AE /* strciphr.h */,
+				B5EC4F77172C9960005382AE /* SymmetricCipher.h */,
+				B5EC4F78172C9960005382AE /* tea.h */,
+				B5EC4F79172C9960005382AE /* tiger.h */,
+				B5EC4F7A172C9960005382AE /* trdlocal.h */,
+				B5EC4F7B172C9960005382AE /* trunhash.h */,
+				B5EC4F7C172C9960005382AE /* ttmac.h */,
+				B5EC4F7D172C9960005382AE /* twofish.h */,
+				B5EC4F7E172C9960005382AE /* validate.h */,
+				B5EC4F7F172C9960005382AE /* vmac.h */,
+				B5EC4F80172C9960005382AE /* wait.h */,
+				B5EC4F81172C9960005382AE /* wake.h */,
+				B5EC4F82172C9960005382AE /* whrlpool.h */,
+				B5EC4F83172C9960005382AE /* winpipes.h */,
+				B5EC4F84172C9960005382AE /* words.h */,
+				B5EC4F85172C9960005382AE /* xtr.h */,
+				B5EC4F86172C9960005382AE /* xtrcrypt.h */,
+				B5EC4F87172C9960005382AE /* zdeflate.h */,
+				B5EC4F88172C9960005382AE /* zinflate.h */,
+				B5EC4F89172C9960005382AE /* zlib.h */,
+			);
+			name = "Indexing Headers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +471,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5381490172C810500303F11 /* NPKeyGenerationDetailViewController.m in Sources */,
 				B53A5E7F172C7CC60063D01D /* main.m in Sources */,
 				B53A5E83172C7CC60063D01D /* NPKeyGenerationAppDelegate.m in Sources */,
-				B53A5E92172C7CC60063D01D /* NPKeyGenerationViewController.m in Sources */,
+				B50334E7172CA24A00D53A28 /* NPKeyGenerationViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +513,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -251,7 +545,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -275,10 +569,27 @@
 		B53A5E96172C7CC60063D01D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = default;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NilPass/NilPass-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = "NilPass/NilPass-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../cryptopp\"",
+					"\"$(SRCROOT)/../cryptopp/cryptopp562\"",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_CFLAGS = "-march=native";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -286,10 +597,26 @@
 		B53A5E97172C7CC60063D01D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_X86_VECTOR_INSTRUCTIONS = default;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NilPass/NilPass-Prefix.pch";
 				INFOPLIST_FILE = "NilPass/NilPass-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../cryptopp\"",
+					"\"$(SRCROOT)/../cryptopp/cryptopp562\"",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_CFLAGS = "-march=native";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -313,6 +640,7 @@
 				B53A5E97172C7CC60063D01D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
