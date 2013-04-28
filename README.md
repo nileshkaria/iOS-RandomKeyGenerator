@@ -1,7 +1,9 @@
 iOS-RandomKeyGenerator
 ======================
 1) Get the cryptopp repository (https://github.com/nileshkaria/cryptopp). This is the standard Crypto++ library (ver 5.6.2) which certain modifications in config.h for the Apple LLVM compiler.
+
 2) Get the cryptopp static library which will be used in our iOS project. cd cryptopp/cryptopp562 ; make ; ls -alstr *.a 
+
 3) Open the iOS-RandomKeyGenerator project in XCode. Add the static library to the project. NilPass -> Targets (NilPass) -> Build Phases -> Link Binary With Libraries -> Add libcryptopp.a
 4) Go to the top of the project and create a new group called "Indexing Headers" and drag the headers from cryptopp/cryptopp562 to this group. IMPORTANT - DO NOT add to any targets when prompted.
 5)  Make the following modifications under "Build Settings"
